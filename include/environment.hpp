@@ -211,8 +211,8 @@
      //! returns a vector of all environment variables.
      //std::vector<std::string> getAll();
 
-     const std::string operator[](const char* a_name) const;
-     const std::string operator[](const std::string& a_name) const;
+//     const std::string operator[](const char* a_name) const;
+//     const std::string operator[](const std::string& a_name) const;
 
      //! Retrieve users's home path
      //!

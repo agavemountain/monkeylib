@@ -1,0 +1,34 @@
+/**
+ *  @file: cppunit_main.cpp
+ *
+ *  Copyright (C) 2018  Joe Turner <joe@agavemountain.com>
+ *
+ *  This program is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License as published by
+ *  the Free Software Foundation, either version 3 of the License, or
+ *  (at your option) any later version.
+ *
+ *     This program is distributed in the hope that it will be useful,
+ *     but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *     GNU General Public License for more details.
+ *
+ *     You should have received a copy of the GNU General Public License
+ *     along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+#include <stdio.h>
+#include "environment.hpp"
+#include "gtest/gtest.h"
+
+namespace {
+
+ // Demonstrate some basic assertions.
+	TEST(Environment, BasicAssertions) {
+		// Expect two strings not to be equal.
+		EXPECT_STRNE("hello", "world");
+		// Expect equality.
+		EXPECT_EQ(7 * 6, 42);
+	}
+
+
+}
